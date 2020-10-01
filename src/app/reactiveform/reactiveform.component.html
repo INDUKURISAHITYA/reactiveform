@@ -1,6 +1,6 @@
 <div class="container">
     <h2>Registration form</h2>
-    <form [formGroup] = "RegistrationForm" (ngSubmit)="onsubmit()" >
+    <form [formGroup] = "RegistrationForm" >
         <div class="form-group">
             <label>User Name</label>
             <input formControlName="username" type="text" class="form-control" [class.is-invalid]="username.touched && username.invalid">
